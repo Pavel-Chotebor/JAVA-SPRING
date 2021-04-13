@@ -1,0 +1,49 @@
+body {
+    background-color:rgb(241, 241, 241) ;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+form {
+    
+    background-color:white; 
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+
+  
+    border: solid 1px black;
+    border-radius: 5px;
+
+    width: 200px;
+    height: 400px;
+    padding: 20px;
+    box-shadow: rgb(206, 205, 205) 4px 4px 4px ;
+ 
+}
+
+label, p {
+    font-size: 13px;
+   
+}
+
+input {
+ width: 190px;
+ border: 1px solid grey;
+ border-radius: 2px;
+}
+
+
+select {
+font-size: 13px;
+}
+
+
+button[type="submit"] {
+    margin-top: 40px;
+    margin-left: 70px;
+    text-align: center;
+
+}

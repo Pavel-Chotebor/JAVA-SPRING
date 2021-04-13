@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Template3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link th:href="@{/styles/style_Table.css}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Animal Type</th>
+        <th>Balance</th>
+        <th>Index</th>
+        <th>Account type</th>
+        <th>Behaviour</th>
+        <th>$ Behaviour</th>
+    </tr>
+    <tr th:each="animal:${animalsList}" th:object="${animal}">
+        <td th:text="*{name}"></td>
+        <td th:text="*{animalType}"></td>
+        <td th:text="*{balance} + ' Zebra'" ></td>
+        <td th:text="${animalStat.index}" ></td>
+        <td th:utext="*{typeOfAccount} == 'Kings' ?  '<span style=color:gold>' +*{typeOfAccount} + '</span>' : *{typeOfAccount} "></td>
+        <td th:text="*{behaviour} == true ? 'Good Guy' : 'Bad guy' " ></td>
+        <td th:text="*{balance} < 2000  ?  'Bad Guy' :  'Good guy' " ></td>  <!-- different way -->
+    </tr>
+</table>
+
+<a th:href="@{/add}"> Open a new bank account! </a>
+<a th:href="@{/sendMoney}"> Make a transaction! </a>
+
+</body>
+</html>

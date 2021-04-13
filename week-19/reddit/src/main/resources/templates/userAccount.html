@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1 th:text="'Hi, ' + ${user.getUsername()}" ></h1>
+
+    <h2>YOUR POSTS:</h2>
+        <ul th:each=" field : ${user.getPosts()}" th:object="${field}">
+            <li th:text="*{title}"></li>
+            <li th:text="*{URL}"></li>
+        </ul>
+    <h2>LIKED POSTS:</h2>
+        <ul th:each=" field : ${likedPosts}" th:object="${field}">
+            <li th:text="*{post.title}"></li>
+        </ul>
+
+
+</body>
+</html>

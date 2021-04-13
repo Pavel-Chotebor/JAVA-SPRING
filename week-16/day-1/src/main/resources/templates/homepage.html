@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Useful utilities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link th:href="@{/template1_style.css}" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div class="box">
+        <a th:href="@{/gfa/add}"> ADD NEW STUDENT </a>
+        <a th:href="@{/gfa/checkForm}"> CHECK THE STUDENT </a>
+        <a th:href="@{/gfa/allStudents}"> ALL STUDENTS </a>
+    </div>
+
+<p th:text="'Number of students: ' + ${totalStudents}" ></p>
+
+</body>
+</html>

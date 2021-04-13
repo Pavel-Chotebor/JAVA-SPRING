@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div class="newPostFormBox">
+        <form action="saveLinkProcessing" method="post">
+            <label>URL</label>
+            <input type="text" name="url" th:value="${urlHolder}">
+            <label>Alias</label>
+            <input type="text" name="alias" th:value="${aliasHolder}">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+
+    <div th:if="${message != null}">
+        <p th:text="${message}"></p>
+    </div>
+
+
+</body>
+</html>

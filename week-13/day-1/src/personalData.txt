@@ -1,0 +1,88 @@
+name;height;mass;hair_color;skin_color;eye_color;birth_year;gender
+Luke Skywalker;172;77;blond;fair;blue;19BBY;male
+C-3PO;167;75;n/a;gold;yellow;112BBY;n/a
+R2-D2;96;32;n/a;white, blue;red;33BBY;n/a
+Darth Vader;202;136;none;white;yellow;41.9BBY;male
+Leia Organa;150;49;brown;light;brown;19BBY;female
+Owen Lars;178;120;brown, grey;light;blue;52BBY;male
+Beru Whitesun lars;165;75;brown;light;blue;47BBY;female
+R5-D4;97;32;n/a;white, red;red;unknown;n/a
+Biggs Darklighter;183;84;black;light;brown;24BBY;male
+Obi-Wan Kenobi;182;77;auburn, white;fair;blue-gray;57BBY;male
+Anakin Skywalker;188;84;blond;fair;blue;41.9BBY;male
+Wilhuff Tarkin;180;unknown;auburn, grey;fair;blue;64BBY;male
+Chewbacca;228;112;brown;unknown;blue;200BBY;male
+Han Solo;180;80;brown;fair;brown;29BBY;male
+Greedo;173;74;n/a;green;black;44BBY;male
+Jabba Desilijic Tiure;175;1,358;n/a;green-tan, brown;orange;600BBY;hermaphrodite
+Wedge Antilles;170;77;brown;fair;hazel;21BBY;male
+Jek Tono Porkins;180;110;brown;fair;blue;unknown;male
+Yoda;66;17;white;green;brown;896BBY;male
+Palpatine;170;75;grey;pale;yellow;82BBY;male
+Boba Fett;183;78.2;black;fair;brown;31.5BBY;male
+IG-88;200;140;none;metal;red;15BBY;none
+Bossk;190;113;none;green;red;53BBY;male
+Lando Calrissian;177;79;black;dark;brown;31BBY;male
+Lobot;175;79;none;light;blue;37BBY;male
+Ackbar;180;83;none;brown mottle;orange;41BBY;male
+Mon Mothma;150;unknown;auburn;fair;blue;48BBY;female
+Arvel Crynyd;unknown;unknown;brown;fair;brown;unknown;male
+Wicket Systri Warrick;88;20;brown;brown;brown;8BBY;male
+Nien Nunb;160;68;none;grey;black;unknown;male
+Qui-Gon Jinn;193;89;brown;fair;blue;92BBY;male
+Nute Gunray;191;90;none;mottled green;red;unknown;male
+Finis Valorum;170;unknown;blond;fair;blue;91BBY;male
+Jar Jar Binks;196;66;none;orange;orange;52BBY;male
+Roos Tarpals;224;82;none;grey;orange;unknown;male
+Rugor Nass;206;unknown;none;green;orange;unknown;male
+Ric Olié;183;unknown;brown;fair;blue;unknown;male
+Watto;137;unknown;black;blue, grey;yellow;unknown;male
+Sebulba;112;40;none;grey, red;orange;unknown;male
+Quarsh Panaka;183;unknown;black;dark;brown;62BBY;male
+Shmi Skywalker;163;unknown;black;fair;brown;72BBY;female
+Darth Maul;175;80;none;red;yellow;54BBY;male
+Bib Fortuna;180;unknown;none;pale;pink;unknown;male
+Ayla Secura;178;55;none;blue;hazel;48BBY;female
+Dud Bolt;94;45;none;blue, grey;yellow;unknown;male
+Gasgano;122;unknown;none;white, blue;black;unknown;male
+Ben Quadinaros;163;65;none;grey, green, yellow;orange;unknown;male
+Mace Windu;188;84;none;dark;brown;72BBY;male
+Ki-Adi-Mundi;198;82;white;pale;yellow;92BBY;male
+Kit Fisto;196;87;none;green;black;unknown;male
+Eeth Koth;171;unknown;black;brown;brown;unknown;male
+Adi Gallia;184;50;none;dark;blue;unknown;female
+Saesee Tiin;188;unknown;none;pale;orange;unknown;male
+Yarael Poof;264;unknown;none;white;yellow;unknown;male
+Plo Koon;188;80;none;orange;black;22BBY;male
+Mas Amedda;196;unknown;none;blue;blue;unknown;male
+Gregar Typho;185;85;black;dark;brown;unknown;male
+Cordé;157;unknown;brown;light;brown;unknown;female
+Cliegg Lars;183;unknown;brown;fair;blue;82BBY;male
+Poggle the Lesser;183;80;none;green;yellow;unknown;male
+Luminara Unduli;170;56.2;black;yellow;blue;58BBY;female
+Barriss Offee;166;50;black;yellow;blue;40BBY;female
+Dormé;165;unknown;brown;light;brown;unknown;female
+Dooku;193;80;white;fair;brown;102BBY;male
+Bail Prestor Organa;191;unknown;black;tan;brown;67BBY;male
+Jango Fett;183;79;black;tan;brown;66BBY;male
+Zam Wesell;168;55;blonde;fair, green, yellow;yellow;unknown;female
+Dexter Jettster;198;102;none;brown;yellow;unknown;male
+Lama Su;229;88;none;grey;black;unknown;male
+Taun We;213;unknown;none;grey;black;unknown;female
+Jocasta Nu;167;unknown;white;fair;blue;unknown;female
+Ratts Tyerell;79;15;none;grey, blue;unknown;unknown;male
+R4-P17;96;unknown;none;silver, red;red, blue;unknown;female
+Wat Tambor;193;48;none;green, grey;unknown;unknown;male
+San Hill;191;unknown;none;grey;gold;unknown;male
+Shaak Ti;178;57;none;red, blue, white;black;unknown;female
+Grievous;216;159;none;brown, white;green, yellow;unknown;male
+Tarfful;234;136;brown;brown;blue;unknown;male
+Raymus Antilles;188;79;brown;light;brown;unknown;male
+Sly Moore;178;48;none;pale;white;unknown;female
+Tion Medon;206;80;none;grey;black;unknown;male
+Finn;unknown;unknown;black;dark;dark;unknown;male
+Rey;unknown;unknown;brown;light;hazel;unknown;female
+Poe Dameron;unknown;unknown;brown;light;brown;unknown;male
+BB8;unknown;unknown;none;none;black;unknown;none
+Captain Phasma;unknown;unknown;unknown;unknown;unknown;unknown;female
+Padmé Amidala;165;45;brown;light;brown;46BBY;female

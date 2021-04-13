@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>name checking</title>
+</head>
+<body>
+
+
+<div th:if="${nameCheck !=null}">
+    <p th:text="${nameCheck == true} ? 'this student is already on the list!' : 'this student is not on the list yet' "></p>
+</div>
+
+
+<div th:if="${allStudents !=null}">
+    <ul th:each="name: ${allStudents}">
+        <li th:text=" ${name}">
+        </li>
+    </ul>
+</div>
+
+<a th:href="@{/gfa}"> Back to homepage </a>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>enter your email!</title>
+</head>
+
+<body th:style="${email.equals('wrong format')} ? 'color:red' : 'color:green'" ></body>
+<p th:text=" ${email.equals('wrong format')} ? ${email} : ${email} + ' : IS VALID!'"> </p>
+
+</body>
+</html>

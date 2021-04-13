@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap" rel="stylesheet">
+    <link th:href="@{/homepage_styles.css}" rel="stylesheet" type="text/css"/>
+</head>
+
+<div class="mainBox">
+    <h1>
+        <a th:href="@{/home}"> My Shop</a>
+    </h1>
+
+    <div class="buttons">
+        <a th:href="@{/electronics}"> electronics </a>
+        <a th:href="@{/clothes}"> clothes and shoes </a>
+        <a th:href="@{/beverages}"> beverages </a>
+        <a th:href="@{/price-in-eur}"> euro price </a>
+        <a th:href="@{/price-in-original}"> original price </a>
+    </div>
+
+
+    <form action="search" method="post">
+        <input type="text" placeholder="search for something..." name="nameFromSearchBar">
+        <button type="submit">Search</button>
+    </form>
+
+
+    <div class="priceFilter">
+        <form action="filter-by-price" method="post">
+            <input type="number" placeholder="filter by price..." name="priceFilter">
+            <button type="submit" name="aboveButton">above</button>
+            <button type="submit" name="belowButton">below</button>
+            <button type="submit" name="exactlyButton">exactly</button>
+        </form>
+    </div>
+
+     <p> Products: </p>
+
+    <table>
+        <tr>
+            <th> Name </th>
+            <th> Type </th>
+            <th> Description </th>
+            <th> Price </th>
+            <th> Quantity of stock </th>
+        </tr>
+        <tr th:each="item:${list}" th:object="${item}">
+            <td th:text="*{name}"></td>
+            <td th:text="*{type}"></td>
+            <td th:text="*{description}"></td>
+
+            <td th:text="${displayEuro} == null ? *{price} + ' Kč' : *{getPriceInEuro()} + ' Eur'"></td>
+            <!-- if displayEuro is not used(used only in price-in-euro endpoint -> print Kč and *price field from
+            models -> constructor, in other case print Eur and getPrice method from models -->
+
+            <td th:text="*{quantityOfStock}"></td>
+        </tr>
+    </table>
+</div>
+<div class="img">
+    <img src="github.png"></img>
+</div>
+</body>
+</html>

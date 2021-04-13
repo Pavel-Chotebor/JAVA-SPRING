@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Useful utilities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link th:href="@{/template1_style.css}" rel="stylesheet" type="text/css"/>
+</head>
+
+
+<body>
+   <div class="box">
+       <a th:href="@{/useful/random}"> RANDOM COLOR </a>
+       <a th:href="@{/useful/email}"> EMAIL VALIDATION </a>
+       <a th:href="@{/useful/caesar-encoder?text=_&number=_}"> ENCODER </a>
+       <a th:href="@{/useful/caesar-decoder?text=_&number=_}"> DECODER </a>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+.idea
+out
+*.iml
+*.xml
+**/week-16/ProgrammerFoxClub/**

@@ -1,0 +1,117 @@
+body {
+    background-color:rgb(241, 241, 241) ;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+form {
+
+display: flex;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+background-color: rgb(255, 255, 255);
+width: 600px;
+height: 400px;
+margin-top: 70px;
+
+box-shadow: rgb(206, 205, 205) 4px 4px 4px ;
+}
+
+
+
+.personalDetails {
+    width: 170px;
+    flex-direction: column;
+ margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: rgb(206, 205, 205) 4px 6px 10px ;
+    
+
+}
+
+
+h1 {
+font-size: 40px;
+padding-top: 5px;
+}
+
+
+
+.or {
+    width: 150px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 55px;
+    
+ 
+
+}
+
+
+img {
+    width:60px;
+    height: auto;
+    margin-top: 110px;
+
+}
+
+.loginWith {
+    width: 190px;
+    margin-top: 130px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    animation: aniload 3s;
+    
+}
+
+
+p a {
+    text-decoration: inherit;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 4px;
+    justify-content: space-around;
+    width: 10%;
+    
+
+}
+
+
+.FB {
+    background-color: rgb(68, 68, 173);
+
+
+}
+
+.TWITTER {
+    background-color: rgb(60, 150, 202);
+}
+
+.GOOGLE {
+    background-color: rgb(216, 88, 83);
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 0;
+    margin-top: 20px;
+    border-bottom: 2px solid rgb(98, 226, 198);
+
+}
+
+input[type="submit"]{
+    margin-top: 45px;
+    padding: 15px;
+    border: 0;
+    border-radius: 6px;
+    background-color:rgb(98, 226, 198);
+    box-shadow: rgb(206, 205, 205) 2px 2px 2px ;
+}
+

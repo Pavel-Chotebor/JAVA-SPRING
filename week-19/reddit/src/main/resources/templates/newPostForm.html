@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new post!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link th:href="@{/reddit_style.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="headerBox">
+    <h1> REDDIT <span>LITE</span></h1>
+    <div class="rightHeader">
+        <a th:href="@{/post/addNewPost/user={userId}(userId=${userId})}"> ADD A NEW POST </a>
+        <a href="/user/login">LOG OUT</a>
+    </div>
+</div>
+
+
+<div class="newPostFormBox">
+    <form th:action="@{/post/addNewPostProcessing/user={userId}(userId=${userId})}" method="post">
+        <h2> Submit a new post</h2>
+        <label>TITLE</label>
+        <input type="text" name="title" placeholder="enter some username">
+        <label>URL</label>
+        <input type="text" name="URL">
+        <button type="submit">LOG IN!</button>
+    </form>
+</div>
+
+</body>
+</html>

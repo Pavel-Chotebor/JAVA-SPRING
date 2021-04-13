@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User registration</title>
+</head>
+<body>
+
+    <!-- NEW USER REGISTRATION -->
+    <div class="registrationBox">
+        <h2>USER REGISTRATION</h2>
+        <form action="/user/registrationProcessing" method="post">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="enter some username">
+            <label>Password</label>
+            <input type="password" name="password">
+            <label>Please repeat your password</label>
+            <input type="password" name="passwordCheck">
+            <button type="submit"> SIGN UP! </button>
+        </form>
+    </div>
+
+    <!-- MESSAGE CENTER - NOTIFICATIONS WHEN SOME PROBLEM APPEAR -->
+    <div class="messageCenter">
+        <p th:text="${passwordError == true} ? 'Your passwords does not match!'"></p>
+        <p th:text="${usernameError == true} ? 'Sorry, there is already user with this name...'"></p>
+        <p th:text="${fieldsError == true} ? 'All fields need to be filled!'"></p>
+    </div>
+
+</body>
+</html>

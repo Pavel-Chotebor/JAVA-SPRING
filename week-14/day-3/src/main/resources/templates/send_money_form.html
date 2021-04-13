@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link th:href="@{/styles/send_money_styles.css}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<form th:action="@{/transaction}" method="post">
+
+    <label>Make transaction to:</label>
+    <input type="text" name="clientName">
+    <button type="submit"> SEND! </button>
+
+</form>
+</body>
+</html>

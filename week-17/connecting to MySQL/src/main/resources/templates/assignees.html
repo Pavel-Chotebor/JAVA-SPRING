@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignees</title>
+</head>
+<body>
+
+<!-- ASSIGNEE PAGE -->
+<a th:href="@{/list}"> BACK TO TODOS </a>
+<a th:href="@{/addNewAssignee}"> ADD NEW ASSIGNEE </a>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>e-mail</th>
+    </tr>
+    <tr th:each="assignee : ${assignees}" th:object="${assignee}">  <!-- printing list of assignee -->
+        <td th:text="*{id}" ></td>
+        <td>
+            <a th:href="@{/{id}/detailAssignee(id=${assignee.id})}" th:text="*{name}"/> <!--with link in name field to detail endpoint -->
+        </td>
+        <td th:text="*{email}" ></td>
+        <td>
+            <a th:href="@{/{id}/deleteAssignee(id=${assignee.id})}">DELETE</a> <!--with link to delete endpoint -->
+        </td>
+        <td>
+            <a th:href="@{/{id}/editAssignee(id=${assignee.id})}">EDIT</a> <!--with link in name field to edit form -->
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

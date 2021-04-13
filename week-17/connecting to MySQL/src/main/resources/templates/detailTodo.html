@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+
+<div th:each="detail : ${detailTodo}" th:object="${detail}">
+    <h1 th:text="*{title}" ></h1>
+    <h3 th:text="'description of this todo: ' + *{description}"></h3>
+    <h3 th:text="'Task ID: ' + *{id}" ></h3>
+    <h3 th:text="'created : ' + *{createDate}" ></h3>
+    <h3 th:text="'due date : ' + *{dueDate}" ></h3>
+    <h3 th:text="'is it urgent? : ' + *{urgent}" ></h3>
+    <h3 th:text="'is it done? : ' + *{done}" ></h3>
+</div>
+</body>
+</html>

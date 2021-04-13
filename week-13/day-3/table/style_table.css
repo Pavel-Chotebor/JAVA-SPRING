@@ -1,0 +1,41 @@
+table {
+    width: 450px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    border-collapse: collapse;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow:2px 4px 4px black;
+
+}
+
+
+table, th, td {
+    border-collapse: collapse;
+    border: solid 1px black;
+
+}
+
+
+th {
+    background-color: #1b1a1a;
+    color: rgb(219, 208, 204);
+    font-size: 25px;
+    
+}
+
+th, td, tr {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #c0bdbd;
+    color:383535
+}
+
+tr:nth-child(odd) {
+    background-color: #a39a9a;
+    color: 383535;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Reddit</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link th:href="@{/reddit_style.css}" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+<div class="headerBox">
+    <h1> REDDIT <span>LITE</span></h1>
+    <div class="rightHeader">
+        <a th:href="@{/post/addNewPost/user={userId}(userId=${userId})}"> ADD A NEW POST </a>
+        <a href="/user/login">LOG OUT</a>
+    </div>
+</div>
+
+
+<div class="redditMainBox">
+    <!-- MESSAGE IF THERE ARE NO POSTS -->
+    <p th:text="${posts.size()==0} ? 'no posts yet...'"></p>
+    <div th:if="${posts.size() > 0}">
+        <!-------------------------->
+
+        <ul th:each="info: ${posts}" th:object="${info}">
+
+            <div class="postBox">
+                <li th:href="*{URL}" th:text="*{title}"></li>
+
+                <div class="smallerSection">
+                    <li th:text=" *{user.getUsername()}"></li>
+                    <li th:text="'RATING: ' + *{rating}"></li>
+
+                    <!-- BUTTONS FOR LIKE AND DISLIKE FOR VOTING -->
+                    <form th:action="@{/post/ratingProcessing/user={userId}(userId=${userId})}" method="post">
+                        <button type="submit" name="like" th:value="*{id}">LIKE</button>
+                        <button type="submit" name="dislike" th:value="*{id}">DISLIKE</button>
+                    </form>
+
+                </div>
+        </ul>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

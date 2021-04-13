@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap" rel="stylesheet">
+    <link th:href="@{/stockInfo_styles.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="mainBox">
+    <h1>
+        <a th:href="@{/home}"> My Shop</a>
+    </h1>
+
+    <div class="buttons">
+        <a th:href="@{/only-available}"> ONLY AVAILABLE </a>
+        <a th:href="@{/cheapest-first}"> CHEAPEST FIRST </a>
+        <a th:href="@{/contains-nike}"> CONTAINS NIKE </a>
+        <a th:href="@{/average-stock}"> AVERAGE STOCK </a>
+        <a th:href="@{/most-expensive}"> MOST EXPENSIVE </a>
+        <a th:href="@{/home2}"> MORE FILTERS </a>
+    </div>
+
+    <form action="search" method="post">
+        <input type="text" placeholder="search for something..." name="nameFromSearchBar">
+        <button type="submit">Search</button>
+    </form>
+
+    <div th:if="${average !=null}">
+        <p th:text="'Average stock: ' + ${average}"></p>
+    </div>
+
+    <div th:if="${maxPriceItem !=null}">
+        <p th:text="'Most expensive product: ' + ${maxPriceItem} + ' (price: ' + ${biggestPrice} + 'Kč)'"></p>
+    </div>
+
+</div>
+
+<div class="img">
+    <a href="https://www.github.com/Pavel-Chotebor">
+        <img src="github.png"></img>
+    </a>
+</div>
+
+
+</body>
+</html>

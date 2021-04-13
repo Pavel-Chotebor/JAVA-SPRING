@@ -1,0 +1,107 @@
+body {
+    background-image: url(1.jfif);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.welcomeBox h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.welcomeBox span {
+    font-family: 'Grandstander', cursive;
+    font-size: 50px;
+    color: rgb(46, 63, 139);
+    
+}
+
+.loginBox {
+    border-top: 9px solid white;
+    border-radius: 40px;
+}
+
+
+
+.welcomeBox {
+    animation: bounceIn;
+    animation-duration: 1s;
+    
+    color: white;
+    width: 550px;
+    height: 620px;
+    margin-top: 4%;
+    padding: 30px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.loginBox form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.loginBox form input[type=text], [type=password] {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    color: rgb(119, 64, 247);
+}
+
+.loginBox button {
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    
+}
+
+
+.loginBox button:hover {
+    background-color: rgb(162, 125, 231);
+    color: white;
+    transition: 0.2s;
+    border: 1px solid wheat;
+}
+
+.loginBox a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.loginBox a:hover {
+    color: wheat;
+    transition: 0.2s;
+  
+}
+
+.messageCenter p{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(192, 42, 42, 0.658);
+    animation: flash;
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+
+}

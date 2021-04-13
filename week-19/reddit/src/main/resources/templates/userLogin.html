@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link th:href="@{/reddit_welcomePage_style.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="welcomeBox">
+    <h1>WELCOME TO REDDIT <span> LITE </span></h1>
+
+    <div class="loginBox">
+    <form action="/user/loginProcessing" method="post">
+        <label>Username</label>
+        <input type="text" name="username" placeholder="enter your username">
+        <label>Password</label>
+        <input type="password" name="password">
+        <button type="submit">LOG IN!</button>
+    </form>
+        <p> Don't have an account yet? </p>
+    <a href="/user/registration">SIGN UP!</a>
+    </div>
+
+    <!-- MESSAGES WHEN SOMETHING GOES WRONG -->
+    <div class="messageCenter">
+        <div th:if="${passwordError != null} ">
+            <p th:text="${passwordError}"></p>
+        </div>
+
+        <div th:if="${usernameError != null} ">
+            <p th:text="${usernameError}"></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

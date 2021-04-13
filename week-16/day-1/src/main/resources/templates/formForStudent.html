@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>enter your name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link th:href="@{/template1_style.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+    <form action="check" method="post">
+        <input type="text" placeholder="enter your name..." name="nameFromForm">
+        <button type="submit">SUBMIT</button>
+    </form>
+
+</body>
+</html>

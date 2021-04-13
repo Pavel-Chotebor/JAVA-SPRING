@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style_singUp.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Sing Up!</title>
+</head>
+<body>
+
+    <form action="action=https://newsletter-ws.herokuapp.com/register" method='post' class='newsletter_form'>
+    
+    
+    <div class="personalDetails">
+    <h1>Sing up</h1>
+   
+    <div class="row1"> 
+    <input                                
+    type="text" 
+    id="text" 
+    name="Username" 
+    minlength="4"
+    maxlength="30"
+    placeholder="Username"
+    />
+    </div>
+
+    <div class="row2">
+    <input                                
+    type="email" 
+    id="email" 
+    name="email" 
+    minlength="4"
+    maxlength="20"
+    placeholder="Email"
+    />
+</div>
+
+    <div class="row3">
+    <input                                
+    type="password" 
+    id="password" 
+    name="password" 
+    minlength="4"
+    maxlength="20"
+    placeholder="Password"
+    />
+</div>
+
+    <div class="row4">
+    <input                                
+    type="password" 
+    id="retype_password" 
+    name="retype_password" 
+    minlength="4"
+    maxlength="20"
+    placeholder="Retype password"
+    />
+</div>
+
+<div class="submitButton">
+    <input                                
+    type="submit" 
+    id="submit" 
+    value="Sing up!" 
+    />
+</div>
+    </div>
+
+<div class="or">
+   <img src="or.png">
+</div>
+
+<div class = "loginWith">
+    <p><a href="https://www.facebook.com/" class="FB" > login with facebook </a></p>
+    <p> <a href="https://twitter.com/?lang=cs"class="TWITTER" > login with twitter </a></p>
+    <p><a href="https://www.google.com/"class="GOOGLE" > login with google </a></p>
+
+
+</div>
+    
+    </form>
+    
+</body>
+</html>

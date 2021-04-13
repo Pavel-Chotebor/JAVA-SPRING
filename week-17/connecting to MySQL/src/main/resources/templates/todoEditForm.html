@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+
+<form action="editFormProcessing" method="post">
+    <input type="text" placeholder="enter todo" name="title"> <!-- name must be same like in model filed class-->
+    <input type="text" placeholder="enter description" name="description"> <!-- because endpoint using @ModelAttribute -->
+    <label>urgent:</label>
+    <input type="checkbox" name="urgent">  <!-- same situation -->
+    <label>done:</label>
+    <input type="checkbox" name="done"> <!-- same situation -->
+    <label>Due date:</label>
+    <input type="datetime-local" name="dueDate"> <!-- same situation -->
+
+    <p>ASSIGN PERSON:</p>
+    <select name="assigneeId">
+        <option th:each=" assignee: ${assignees}" th:value="${assignee.getId()}" th:text="${assignee.getName()}"></option>
+    </select>
+
+    <button type="edit!">OK</button>
+</form>
+
+</body>
+</html>
